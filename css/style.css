@@ -1,0 +1,307 @@
+/* 
+    Template Name: My FOlio
+    Author: Shahadat Hossain
+    Template Designer : Shahadat Hossain
+    Author Uri :https://www.facebook.com/shahadat2002bd 
+    Version : 1.0.0
+
+
+    Table OF Content
+    ===========================
+    ** Home **
+    ** About Me ** 
+    ** Service
+    
+
+*/
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,
+ol{
+    list-style-type: none;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,
+p,
+small,
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+.secInfo h2{ 
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;}
+.secInfo p{
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px;
+    margin: 0 auto;}
+.secInfo p span{
+    font-size: 23px;
+    font-weight: 800;
+}
+/* Common Css End */
+#work .container .col-lg-8{
+    width: 100%;
+}
+#about .container .col-lg-10{
+    width: 100%;
+}
+body{
+    font-family: sans-serif;
+}
+/*Nav section css Start*/
+nav ul li a{
+    font-weight: 800;
+    color: white;
+    font-size: 24px;
+}
+nav{
+    background-color: #02918c; 
+}
+nav .row{
+    align-items: center;
+}
+    
+#nav ul li a{
+    margin: 10px;
+    color: white;
+    font-weight: 800;
+   
+    transition: all linear .5s;
+}
+nav .logo{
+    width: 20%;
+}
+nav .logo img{
+    display: block;
+    : 25px;
+}
+nav .menu{
+    width: 80%;
+    
+}
+nav .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav .menu ul li a{
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    padding: 22px 25px;
+    transition: all .4s linear;
+}
+nav .menu ul li:hover a{
+    color: yellow;
+}
+#nav ul li a:hover{
+    color: red;
+    border-radius: 50px;
+    background-color: yellow;
+}
+/*Nav section css End*/
+/*Banner Section Css Start */
+#banner .banner-slider-item {
+    height: 761px;
+    background-size: cover !important ;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+#banner .banner-slider-item::after{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,  0, 0, 0.8);
+    inset: 0;
+}
+    #banner .banner-content a{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #banner .banner-content h4{
+        font-size: 30px;
+        font-weight: 800;
+    }
+    #banner .banner-content h1{
+        font-size: 68px;
+        font-weight: 800;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+    }
+    #banner .banner-content p{
+        font-size: 18px;
+    }
+    #banner .banner-content img{
+        margin: 38px 0;
+    }
+    #banner .banner-content a{
+        border-radius: 50px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 14px;
+        color: white;
+        background-color: yellow;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s linear;
+    }
+    #banner .row{
+        align-items: center;
+    }
+/*Banner Section Css Start */
+
+/*About Section Css Start */
+#about{
+    padding: 80px 0px 60px;
+}
+#about .about-item-container div[class^="col"]{
+    border-right: 1px solid black;
+}
+#about .about-item-container div[class^="col"]:last-child{
+    border-color: transparent;
+}
+#about .about-item{
+}
+#about .about-item-container{
+    margin-top: 50px;
+}
+#about .about-item i{
+    font-size: 30px;
+    color: #02918c;
+}
+#about .about-item h4{
+    margin: 29px;
+    color: #7e8287;
+}
+#about .about-item p{
+    color: #7e8287;
+}
+/*About Section Css Start */
+
+/*Service Section Css Start */
+#service .row{
+    margin-top: 50px;
+}
+#service{
+    padding: 80px 0 40px ;
+    background-image: url(../image/service.bg.png);
+    background-size: cover;
+    position: right center;
+}
+#service .secInfo{
+    padding-right: 40px;
+}
+#service .service-item{}
+#service .service-item i{
+    font-size: 30px;
+    color: #7e8287;
+}
+#service .service-item h5{
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 800;
+    color: #7e8287;
+}
+#service .service-item p{
+  font-size: 11px;
+  line-height: 21px;
+
+}
+/*Service Section Css Start */
+
+/*My Work Section Css Start */
+#work{
+    padding: 80px 0;
+}
+#work .work-item{
+    position: relative;
+}
+#work .work-item .overlay{
+    position: absolute;
+    inset: 20px;
+    background-color: #02918c;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+#work .work-item:hover .overlay{
+    opacity: 100;
+    visibility: visible;
+    transform: scale(1);
+}
+#work .work-item .overlay h5{}
+#work .work-item .overlay p{}
+/*My Work Section Css Start */
+
+/* Contact Section Start*/
+#contact .container .p2{
+    width: 604px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#contact .container h2{
+    font-size: 46px;
+    color: #02918c;
+}
+#contact .secInfo{
+    margin-bottom: 50px;
+}
+#contact .contact-form{
+    background-color: black;
+    padding: 63px 112px;
+}
+#contact .contact-form .form-control{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #898989;
+    border-radius: 0;
+    margin-bottom: 30px;
+    color: wheat;
+    text-align: center;
+}
+#contact .contact-form .form-control:focus{
+    box-shadow: 0;
+}
+#contact .contact-form .btn{
+    background-color: #cfc91d;
+        text-transform: uppercase;
+        color: #0b1016;
+        font-weight: 800;
+        border: none;
+        
+        cursor: pointer;
+}
+/* Contact Section End*/
+/* Footer Section End*/
+#footer{
+    background-color: #000000;
+}
+/* Footer Section End*/
